@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Smart Career Path Recommender</title>
+  <link rel="stylesheet" href="grr.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>Career Path Recommender</h1>
+    <p>Answer a few quick questions and discover your best career path!</p>
+
+    <form id="quiz-form">
+      <div class="question">
+        <label>1. Do you enjoy solving logical problems?</label><br>
+        <input type="radio" name="q1" value="tech"> Yes
+        <input type="radio" name="q1" value="non-tech"> No
+      </div>
+
+      <div class="question">
+        <label>2. Do you prefer working with people or computers?</label><br>
+        <input type="radio" name="q2" value="non-tech"> People
+        <input type="radio" name="q2" value="tech"> Computers
+      </div>
+
+      <div class="question">
+        <label>3. Do you like designing user interfaces?</label><br>
+        <input type="radio" name="q3" value="design"> Yes
+        <input type="radio" name="q3" value="tech"> No
+      </div>
+
+      <button type="submit">Get Recommendation</button>
+    </form>
+
+    <div id="result" class="hidden"></div>
+  </div>
+
+  <script src="grr.js"></script>
+</body>
+</html>
